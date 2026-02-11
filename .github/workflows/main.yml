@@ -10,10 +10,10 @@ jobs:
        - name: Gerando output com shell
          id: exemplo-output
          run: |
-           ACTION_RANDOW=$(( $RANDOM ))
+           ACTION_RANDOM=$(( $RANDOM ))
            echo "action_random=$ACTION_RANDOM" >> $GITHUB_OUTPUT
 
-       - name: Exibndo o output da action exemplo output
+       - name: Exibindo o output da action exemplo output
          run: echo "${{ steps.exemplo-output.outputs.action_random }}"
          
          
